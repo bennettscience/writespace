@@ -7,8 +7,10 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="header">
-        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+      <div id="header-image" style="background-image:url('<?php header_image();?>'); ">
+        <div id="site-title">
+          <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
+        </div>
       </div>
       <hr />
       <div id="nav">

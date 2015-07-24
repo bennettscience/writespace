@@ -68,15 +68,26 @@ body {
   margin: 0 auto;
 }
 
-#header {
-  height:10%;
-  margin:25px;
-  padding:25px;
+#header-image {
+  height: 200px;
+  margin-top:20px;
   font-family:sans-serif;
+  background-repeat:no-repeat;
+  background-size: cover;
 }
 
-#header h1 {
+#site-title {
+  position:relative;
   font-size:48px;
+  filter: none;
+  margin:0 auto;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#site-title a {
+  text-decoration: none;
+  color:#fff;
 }
 .menu-menu-1-container {
   height:auto;
