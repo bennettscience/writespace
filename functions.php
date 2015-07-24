@@ -6,13 +6,6 @@ function custom_menu() {
 }
 add_action( 'init', 'custom_menu');
 
-// Site custom header image
-$args = array(
-  'default-image' => '',
-  'uploads'       => true,
-);
-add_theme_support('custom-header', $args );
-
 // Post featured image
 add_theme_support( 'post-thumbnails' );
 

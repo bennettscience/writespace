@@ -1,18 +1,22 @@
 <?php get_header(); ?>
 <div id="main">
-  <div ="content">
-    <h1>Main area</h1>
+  <div ="post-content">
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+      <div class="the-post">
       <?php if (has_post_thumbnail() ) {
         the_post_thumbnail();
       }
       ?>
-      <h1><?php the_title(); ?></h1>
-      <h4>Postd on <?php the_time( 'F jS, Y') ?></h4>
-      <p>
-        <?php the_content(__('(more...)')); ?>
-      </p>
-      <hr><?php endwhile; else: ?>
+      <div class="post-meta">
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> :: <p><?php the_time( 'F jS, Y') ?></p>
+      </div>
+      <div class="the-post-content">
+        <p>
+          <?php the_content(__('(more...)')); ?>
+        </p>
+      </div>
+      <hr>
+      <?php endwhile; else: ?>
         <p>
           <?php _e('Sorry, no posts matched your criteria.'); ?>
         </p><?php endif; ?>

@@ -8,7 +8,7 @@ Author URI: http://ohheybrian.com/
 Tags: clean, single-column, writer
 */
 
-<<<<<<< HEAD
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -59,41 +59,31 @@ table {
 }
 
 /* New styles */
-body {
-  text-align: center;
-}
-
 #wrapper {
   display: block;
   width: 80%;
   margin: 0 auto;
 }
-
-#header-image {
-  height: 200px;
-  margin-top:20px;
-  font-family:sans-serif;
-  background-repeat:no-repeat;
-  background-size: cover;
+#site-title {
+	text-align: center;
+  font-size:48px;
+	height:120px;
 }
 
-#site-title {
-  position:relative;
-  font-size:48px;
-  filter: none;
-  margin:0 auto;
-  top:50%;
-  transform: translateY(-50%);
+#site-title h1 {
+	position:relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #site-title a {
   text-decoration: none;
-  color:#fff;
 }
 .menu-menu-1-container {
   height:auto;
   margin:15px 0;
   padding:5px;
+	text-align: center;
 }
 .menu-item {
   display:inline;
@@ -103,21 +93,41 @@ body {
 .menu-item a {
   text-decoration: none;
 }
-
-#content {
-  float: left;
-  width: 75%;
-  border: 2px #a2a2a2 solid;
-}
-
 .attachment-post-thumbnail {
   max-width: 100%;
   height:auto;
 }
 
-/*.attachment-post-content img {
-  max-width: 100%;
-}*/
+.post-meta {
+	font-family: sans-serif;
+	margin:15px 0;
+}
+
+.post-meta a, p {
+	display: inline;
+}
+
+.post-meta a {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.post-meta p {
+	font-size: 16px;
+}
+.post-meta a:hover {
+	text-decoration: underline;
+}
+
+.the-post-content {
+	clear:both;
+  display:block;
+}
+
+.the-post hr {
+	margin:35px 0;
+}
 
 #delimiter {
   clear: both;
@@ -125,10 +135,4 @@ body {
 
 #footer {
   border: 2px #a2a2a2 solid;
-}
-
-.title {
-  font-family: verdana;
-  font-size: 11pt;
-  font-weight: bold;
 }
