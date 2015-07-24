@@ -109,11 +109,14 @@ body {
   border: 2px #a2a2a2 solid;
 }
 
-#sidebar {
-  float: right;
-  width: 23%;
-  border: 2px #a2a2a2 solid;
+.attachment-post-thumbnail {
+  max-width: 100%;
+  height:auto;
 }
+
+/*.attachment-post-content img {
+  max-width: 100%;
+}*/
 
 #delimiter {
   clear: both;
