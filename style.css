@@ -65,8 +65,8 @@ p {
 }
 
 img {
-	display: block;
-	margin:inherit;
+	width:100%;
+	height:auto;
 }
 
 #wrapper {
@@ -140,7 +140,7 @@ img {
 	margin:0 auto;
 }
 
-.size-full {
+.size-full-page {
 	width: 200%;
   height: 450px;
   margin-top: 1.5em;

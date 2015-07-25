@@ -21,4 +21,18 @@ add_filter('the_content', 'filter_ptags_on_images');
 
 update_option('image_default_link_type', 'none');
 
+// Add image size options
+add_action( 'after_setup_theme', 'new_image_sizes');
+function new_image_sizes() {
+  add_image_size( 'full-page', 3000 );
+}
+
+add_filter('image_size_names_choose', 'my_image_sizes');
+function my_image_sizes($sizes) {
+  $addsizes = array(
+    "full-page" => __( "Full Page" )
+  );
+  $newsizes = array_merge($sizes, $addsizes);
+  return $newsizes;
+}
 ?>
