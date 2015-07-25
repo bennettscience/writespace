@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.25;
 }
 ol, ul {
 	list-style: none;
@@ -59,10 +59,14 @@ table {
 }
 
 /* New styles */
+p {
+	margin:0.5em 0;
+}
 #wrapper {
   display: block;
   width: 80%;
   margin: 0 auto;
+	margin-bottom:10px;
 }
 #site-title {
 	text-align: center;
@@ -96,33 +100,53 @@ table {
 .attachment-post-thumbnail {
   max-width: 100%;
   height:auto;
+	margin: 0 auto;
 }
 
-.post-meta {
+.post-title {
 	font-family: sans-serif;
-	margin:15px 0;
+	width:75%;
+	margin:15px auto;
 }
 
-.post-meta a, p {
+.post-title a + p {
 	display: inline;
 }
 
-.post-meta a {
+.post-title a {
 	font-size: 24px;
 	font-weight: bold;
 	text-decoration: none;
 }
 
-.post-meta p {
+.post-title p {
 	font-size: 16px;
 }
-.post-meta a:hover {
+.post-title a:hover {
 	text-decoration: underline;
 }
 
 .the-post-content {
 	clear:both;
   display:block;
+	width:75%;
+	margin:0 auto;
+}
+
+.post-metadata {
+	margin: 15px auto;
+	width:75%;
+}
+
+.the-post {
+	margin:0 auto;
+}
+
+img.attachment-post-thumbnail {
+	float:none;
+	clear:both;
+	margin:0 auto;
+	display:block;
 }
 
 .the-post hr {

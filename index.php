@@ -7,13 +7,17 @@
         the_post_thumbnail();
       }
       ?>
-      <div class="post-meta">
+      <div class="post-title">
         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> :: <p><?php the_time( 'F jS, Y') ?></p>
       </div>
       <div class="the-post-content">
         <p>
           <?php the_content(__('(more...)')); ?>
         </p>
+      </div>
+      <div class="post-metadata">
+        <p><?php the_category( ', ' ); ?></p>
+        <?php the_tags( 'Tagged: '); ?></p>
       </div>
       <hr>
       <?php endwhile; else: ?>
