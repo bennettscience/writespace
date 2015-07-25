@@ -41,6 +41,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.25;
+	overflow-x:hidden;
 }
 ol, ul {
 	list-style: none;
@@ -62,6 +63,7 @@ table {
 p {
 	margin:0.5em 0;
 }
+
 #wrapper {
   display: block;
   width: 80%;
@@ -133,6 +135,14 @@ p {
 	margin:0 auto;
 }
 
+.size-full {
+	width: 200%;
+  height: 450px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: -50%;
+  object-fit: cover;
+}
 .post-metadata {
 	margin: 15px auto;
 	width:75%;
