@@ -94,30 +94,18 @@ img {
   margin: 0 auto;
 	margin-bottom:10px;
 }
-#site-title {
-	text-align: center;
-  font-size:48px;
-	height:120px;
+#nav {
+	display:block;
 }
 
-#site-title h1 {
-	position:relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-#site-title a {
-  text-decoration: none;
-}
 .menu-menu-1-container {
   height:auto;
   margin:15px 0;
-  padding:5px;
-	text-align: center;
 }
 .menu-item {
   display:inline;
   margin:0 10px;
+	font-family:'Helvetica Neue',Helvetica,sans-serif;
 }
 
 .menu-item a {

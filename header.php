@@ -8,13 +8,8 @@
   </head>
   <body>
     <div id="wrapper">
-      <div id="site-title">
-        <h1><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-      </div>
-      <hr />
       <div id="nav">
         <nav>
           <?php wp_nav_menu(); ?>
         </nav>
       </div>
-      <hr />
