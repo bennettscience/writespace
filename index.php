@@ -8,7 +8,8 @@
       }
       ?>
       <div class="post-title">
-        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> :: <p><?php the_time( 'F jS, Y') ?></p>
+        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+        <p><?php the_time( 'F jS, Y') ?></p>
       </div>
       <div class="the-post-content">
         <p>

@@ -8,7 +8,7 @@ Author URI: http://ohheybrian.com/
 Tags: clean, single-column, writer
 */
 
-
+/*HTML5 Reset Styles*/
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -61,9 +61,25 @@ table {
 
 /* New styles */
 p {
-	font-size:18px;
 	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
 	margin: 10px auto;
+	color:#3f3f3f;
+}
+
+b {
+	font-weight:bold;
+}
+
+a {
+	text-decoration: none;
+	-webkit-transition: color 0.3s ease-in-out;
+	-moz-transition: color 0.3s ease-in-out;
+	-o-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+	color:#6994f0;
 }
 
 img {
@@ -114,27 +130,18 @@ img {
 }
 
 .post-title {
-	font-family: "Tahoma",Geneva,sans-serif;
+	font-family: 'Abril Fatface',cursive;
 	width:75%;
 	margin:15px auto;
 }
 
-.post-title a + p {
+.post-title h1 {
+	font-size:4em;
+	line-height:65px;
+}
+
+.post-title h1 + p {
 	display: inline;
-}
-
-.post-title a {
-	font-size: 34px;
-	font-weight: bold;
-	text-decoration: none;
-	-webkit-transition: color 0.5s ease-in-out;
-	-moz-transition: color 0.5s ease-in-out;
-	-o-transition: color 0.5s ease-in-out;
-	transition: color 0.5s ease-in-out;
-}
-
-.post-title a:hover {
-	color:#6994f0;
 }
 
 .post-title p {
@@ -147,6 +154,7 @@ img {
   display:block;
 	width:75%;
 	margin:0 auto;
+	font-size:1.4em;
 }
 
 .size-full-page {
