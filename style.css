@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1.25;
+	line-height: 1.5;
 	overflow-x:hidden;
 }
 ol, ul {
@@ -61,12 +61,15 @@ table {
 
 /* New styles */
 p {
-	margin:0.5em 0;
+	font-size:18px;
+	font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+	margin: 10px auto;
 }
 
 img {
 	width:100%;
 	height:auto;
+	margin: 15px auto;
 }
 
 #wrapper {
@@ -111,7 +114,7 @@ img {
 }
 
 .post-title {
-	font-family: sans-serif;
+	font-family: "Tahoma",Geneva,sans-serif;
 	width:75%;
 	margin:15px auto;
 }
@@ -121,16 +124,22 @@ img {
 }
 
 .post-title a {
-	font-size: 24px;
+	font-size: 34px;
 	font-weight: bold;
 	text-decoration: none;
+	-webkit-transition: color 0.5s ease-in-out;
+	-moz-transition: color 0.5s ease-in-out;
+	-o-transition: color 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out;
+}
+
+.post-title a:hover {
+	color:#6994f0;
 }
 
 .post-title p {
 	font-size: 16px;
-}
-.post-title a:hover {
-	text-decoration: underline;
+	color:#9a9a9a;
 }
 
 .the-post-content {
