@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div id="main">
-  <div ="post-content">
+  <div class="post-content">
     <?php if ( is_home() || is_archive() ) { // start home loop ?>
 
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
