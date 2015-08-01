@@ -124,12 +124,12 @@ img {
 	font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
 	font-weight:700;
 	font-size:48px;
+	line-height:1;
 }
 .post-title p {
 	font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
 	font-size: 18px;
 	color:#9a9a9a;
-	margin-top:-10px;
 }
 .the-post-content {
 	clear:both;
