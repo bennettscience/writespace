@@ -61,8 +61,17 @@
         <?php endwhile; ?>
           <?php endif; ?>
         <?php } //end single loop ?>
+      </div>
+      <div id = "delimiter"></div>
+      <div id="footer">
+        <div id="connect">
+          <a href="<?php bloginfo('rss2_url'); ?>">RSS</a>
+          <a href="<?php bloginfo('atom_url'); ?>">Atom</a>
+        </div>
+      </div>
+    </div>
   </div>
-  <div id = "delimiter">
-  </div>
-  <?php get_footer( ); ?>
-</div>
+</div> <!--/#main -->
+</div> <!--/.wrapper -->
+</body>
+</html>
