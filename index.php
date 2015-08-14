@@ -6,7 +6,7 @@
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
       <div class="the-post">
-        <div class="the-post-thumbnail">
+        <div class="the-post-thumbnail-home">
           <?php if (has_post_thumbnail() ) {
             the_post_thumbnail();
           } ?>
