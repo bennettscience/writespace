@@ -9,7 +9,5 @@
   <body>
     <div id="wrapper">
       <div id="nav">
-        <nav>
-          <?php wp_nav_menu(); ?>
-        </nav>
+        <?php wp_nav_menu(); ?>
       </div>

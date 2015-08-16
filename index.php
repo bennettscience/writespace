@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 <div id="main">
   <div class="post-content">
+    <!--- *********************) HOME LOOP ******************** -->
     <?php if ( is_home() || is_archive() ) { // start home loop ?>
 
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
@@ -37,7 +38,8 @@
       <?php endif; ?>
     <?php } // end home loop ?>
 
-    <?php if(is_single()) {  // start single loop ?>
+    <!-- ***************** SINGLE LOOP ***************** -->
+    <?php if(is_single()) { ?>
         <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
           <div class="the-post">
             <div class="the-post-thumbnail">
@@ -57,6 +59,9 @@
             </p>
           </div><!--/the-post-content"-->
 
+          <!-- Load post comments -->
+          <?php comments_template(); ?>
+
           <div class="post-metadata">
             <p><?php the_category( ', ' ); ?></p>
             <?php the_tags( 'Tagged: '); ?></p>
@@ -66,6 +71,7 @@
           <?php endif; ?>
         <?php } //end single loop ?>
 
+        <!-- *********************** PAGE LOOP ********************* -->
         <?php if(is_page()) { // start page loop ?>
           <?php if(have_posts()) : ?>
             <?php while( have_posts()) : the_post(); ?>
