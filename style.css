@@ -61,7 +61,7 @@ table {
 
 /* New styles */
 p {
-	font-family:'Merriweather','Times New Roman',Times,Georgia,serif;
+	font-family:'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
 	margin: 10px auto;
 	color:#3f3f3f;
 }
@@ -94,9 +94,6 @@ img {
   margin: 0 auto;
 	margin-bottom:10px;
 }
-#nav {
-	display:block;
-}
 .menu-menu-1-container {
   height:auto;
   margin:15px 0;
@@ -128,27 +125,27 @@ img {
 	margin:15px auto;
 }
 .post-title h1 {
-	font-family: 'Source Sans Pro',Helvetica,Arial,sans-serif;
+	font-family: 'Merriweather',Georgia,serif;
 	font-weight:700;
 	font-size:48px;
 	line-height:1;
 }
 .post-title p {
-	font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
+	font-family:'Merriweather',Georgia,serif;
 	font-size: 18px;
 	color:#9a9a9a;
 }
 .the-post-content {
 	clear:both;
   display:block;
-	width:75%;
+	width:85%;
 	margin:0 auto;
 	font-size:22px;
 }
 
 .post-metadata {
 	margin: 15px auto;
-	width:75%;
+	width:85%;
 }
 
 .post-metadata p {
@@ -163,11 +160,37 @@ img {
 .the-post hr {
 	margin:35px 0;
 }
+/* Comment Styles */
+#respond {
+	position:relative;
+	margin:0 auto;
+	width:85%;
+}
+#respond h3 {
+	font-family:'Merriweather',Times, Georgia, serif;
+	font-size:28px;
+	font-weight:700;
+}
+#commentform {
+	width:100%;
+}
+#commentform input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-bottom: solid 2px #c9c9c9;
+  transition: border 0.3s;
+	outline:none !important;
+	background-image:none;
+}
+#commentform input[type="text"]:focus,
+#commentform input[type="text"].focus {
+  border-bottom: solid 2px #969696;
+}
 #delimiter {
   clear: both;
 }
 #footer {
-	width:75%;
+	width:85%;
 	margin:0 auto;
 	padding:15px 0;
 	text-align:right;
