@@ -121,7 +121,7 @@ img {
 	object-fit: cover;
 }
 .post-title {
-	width:75%;
+	width:85%;
 	margin:15px auto;
 }
 .post-title h1 {
@@ -161,10 +161,13 @@ img {
 	margin:35px 0;
 }
 /* Comment Styles */
+/* Input stlyes from http://callmenick.com/post/various-css-input-text-styles */
 #respond {
 	position:relative;
 	margin:0 auto;
-	width:85%;
+	width:75%;
+	padding:20px 5%;
+	background-color:#efefef;
 }
 #respond h3 {
 	font-family:'Merriweather',Times, Georgia, serif;
@@ -174,17 +177,32 @@ img {
 #commentform {
 	width:100%;
 }
-#commentform input[type="text"] {
+#commentform input[type="text"], textarea {
   padding: 10px;
   border: none;
   border-bottom: solid 2px #c9c9c9;
   transition: border 0.3s;
 	outline:none !important;
-	background-image:none;
+	background-image:none !important;
+	width:95%;
+	display:block;
+	font-size:20px;
+	font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
 }
 #commentform input[type="text"]:focus,
-#commentform input[type="text"].focus {
+#commentform input[type="text"].focus, textarea:focus, texarea.focus {
   border-bottom: solid 2px #969696;
+}
+#comment {
+	width:95%;
+	padding:2.5%;
+	line-height: 1.5;
+}
+#submit {
+	font-size: 40px;
+  border: none;
+  background-color: #fff;
+  width: 100%;
 }
 #delimiter {
   clear: both;
