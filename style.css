@@ -161,11 +161,46 @@ img {
 	margin:35px 0;
 }
 /* Comment Styles */
+#comments h1,h2,h3,h4,h5 {
+	font-family: sans-serif;
+	font-size: 28px;
+}
+.commentlist {
+	width: inherit;
+  margin: inherit;
+  padding: 2.5%;
+}
+.commentlist li {
+	margin: 5% 0;
+}
+.comment .comment-body {
+	margin:5% 0;
+}
+.comment-author img {
+	display:inline;
+	width:auto;
+}
+
+.reply {
+	text-align: center;
+	width:45%;
+  border: 1px solid #d0d0d0;
+  font-size: 22px;
+  font-family: sans-serif;
+  background-color: #ddd;
+}
+.reply a {
+	display:block;
+}
+
+.children {
+	margin-left:45px;
+}
 /* Input stlyes from http://callmenick.com/post/various-css-input-text-styles */
 #respond {
 	position:relative;
 	margin:0 auto;
-	width:75%;
+	width:inherit;
 	padding:20px 5%;
 	background-color:#efefef;
 }
@@ -204,7 +239,7 @@ img {
   background-color: #fff;
   width: 100%;
 }
-#delimiter {
+.delimiter {
   clear: both;
 }
 #footer {
