@@ -59,13 +59,17 @@
             </p>
           </div><!--/the-post-content"-->
 
-          <!-- Load post comments -->
-          <?php comments_template(); ?>
-
           <div class="post-metadata">
             <p><?php the_category( ', ' ); ?></p>
             <?php the_tags( 'Tagged: '); ?></p>
           </div><!--/post-metadata-->
+
+          <div class="delimiter"></div>
+
+          <hr />
+
+          <!-- Load post comments -->
+          <?php comments_template(); ?>
 
         <?php endwhile; ?>
           <?php endif; ?>
