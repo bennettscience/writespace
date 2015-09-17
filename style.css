@@ -165,6 +165,9 @@ img {
 	font-family: sans-serif;
 	font-size: 28px;
 }
+.comment-meta {
+	font-family:sans-serif;
+}
 .commentlist {
 	width: inherit;
   margin: inherit;
@@ -180,7 +183,6 @@ img {
 	display:inline;
 	width:auto;
 }
-
 .reply {
 	text-align: center;
 	width:10%;
@@ -200,7 +202,6 @@ img {
 	display:block;
 	color:#000;
 }
-
 .children {
 	margin-left:45px;
 }
