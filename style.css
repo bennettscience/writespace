@@ -183,14 +183,22 @@ img {
 
 .reply {
 	text-align: center;
-	width:45%;
+	width:10%;
   border: 1px solid #d0d0d0;
   font-size: 22px;
   font-family: sans-serif;
-  background-color: #ddd;
+  background-color: #eee;
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	-o-transition: border-color 0.3s ease-in-out;
+	transition: border-color color 0.3s ease-in-out;
+}
+.reply:hover {
+	border-color: #6994f0;
 }
 .reply a {
 	display:block;
+	color:#000;
 }
 
 .children {
@@ -235,10 +243,19 @@ img {
 }
 #submit {
 	font-size: 40px;
-  border: none;
+  border: 1px solid #d0d0d0;
   background-color: #fff;
   width: 100%;
+	-webkit-transition: border-color 0.3s ease-in-out;
+	-moz-transition: border-color 0.3s ease-in-out;
+	-o-transition: border-color 0.3s ease-in-out;
+	transition: border-color color 0.3s ease-in-out;
 }
+#submit:hover {
+	border-color:#6994f0;
+	cursor:pointer;
+}
+
 .delimiter {
   clear: both;
 }
