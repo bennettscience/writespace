@@ -61,7 +61,11 @@
 
           <div class="post-metadata">
             <p><?php the_category( ', ' ); ?></p>
-            <?php the_tags( 'Tagged: '); ?></p>
+            <p><?php the_tags( 'Tagged: '); ?></p>
+            <div class="meta-img">
+              <img src="<?php bloginfo('template_url'); ?>/img/twitter.png" />
+              <img src="<?php bloginfo('template_url'); ?>/img/permalink.png" />
+            </div>
           </div><!--/post-metadata-->
 
           <div class="delimiter"></div>
@@ -105,6 +109,9 @@
         <div id="connect">
           <a href="<?php bloginfo('rss2_url'); ?>">RSS</a>
           <a href="<?php bloginfo('atom_url'); ?>">Atom</a>
+        </div>
+        <div id="credits">
+          <p>Powered by WordPress and writespace</p>
         </div>
       </div>
     </div>

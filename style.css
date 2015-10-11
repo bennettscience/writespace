@@ -90,7 +90,7 @@ img {
 
 #wrapper {
   display: block;
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
 	margin-bottom:10px;
 }
@@ -152,6 +152,18 @@ img {
 	font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
 	font-size: 18px;
 }
+.meta-img {
+	display:block;
+	width:100%;
+	margin:0 auto;
+	text-align: center;
+}
+.meta-img img{
+	width:24px;
+	height:24px;
+	display:inline;
+	margin:0 15px;
+}
 
 .the-post {
 	margin:0 auto;
@@ -190,20 +202,19 @@ img {
 	font-size:14px;
 	font-style: italic;
 }
-.commentlist .depth-2 {
+.commentlist .depth-2, .depth-4 {
 	background-color:#ededed;
 }
 .reply {
 	text-align: center;
-	width:10%;
+	width:auto;
   border: 1px solid #d0d0d0;
   font-size: 22px;
   font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;;
-  background-color: #eee;
 	-webkit-transition: border-color 0.3s ease-in-out;
 	-moz-transition: border-color 0.3s ease-in-out;
 	-o-transition: border-color 0.3s ease-in-out;
-	transition: border-color color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
 }
 .reply:hover {
 	border-color: #6994f0;
@@ -211,7 +222,6 @@ img {
 .reply a {
 	display:block;
 	color:#000;
-	background-color:#fff;
 }
 .children {
 	margin-left:45px;
@@ -260,7 +270,7 @@ img {
 	-webkit-transition: border-color 0.3s ease-in-out;
 	-moz-transition: border-color 0.3s ease-in-out;
 	-o-transition: border-color 0.3s ease-in-out;
-	transition: border-color color 0.3s ease-in-out;
+	transition: border-color 0.3s ease-in-out;
 }
 #submit:hover {
 	border-color:#6994f0;
@@ -271,10 +281,20 @@ img {
   clear: both;
 }
 #footer {
-	width:85%;
+	width:inherit;
 	margin:0 auto;
 	padding:15px 0;
-	text-align:right;
+	position:relative;
+}
+#footer#connect {
+	position:absolute;
+	top:10px;
+	right:20px;
+}
+#footer#credits {
+	position:absolute;
+	top:10px;
+	left:20px;
 }
 #connect a {
 	display:inline-block;
