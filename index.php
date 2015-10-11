@@ -25,8 +25,8 @@
       </div><!--/the-post-content"-->
 
       <div class="post-metadata">
-        <p><?php the_category( ', ' ); ?></p>
-        <?php the_tags( 'Tagged: '); ?></p>
+        <p>posted in: <?php the_category( ' ' ); ?></p>
+        <p>tagged: <?php the_tags( ' ' ); ?></p>
       </div><!--/post-metadata-->
 
       <hr>
@@ -60,11 +60,10 @@
           </div><!--/the-post-content"-->
 
           <div class="post-metadata">
-            <p><?php the_category( ', ' ); ?></p>
-            <p><?php the_tags( 'Tagged: '); ?></p>
+            <p>posted in: <?php the_category( ' ' ); ?></p>
+            <p>tagged: <?php the_tags( ' ' ); ?></p>
             <div class="meta-img">
-              <img src="<?php bloginfo('template_url'); ?>/img/twitter.png" />
-              <img src="<?php bloginfo('template_url'); ?>/img/permalink.png" />
+              <a onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;" href="http://twitter.com/share?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" /></a>
             </div>
           </div><!--/post-metadata-->
 
