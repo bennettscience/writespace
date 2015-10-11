@@ -100,9 +100,9 @@ img {
 }
 .menu-item {
   display:inline;
-	margin-right:20px;
+	margin-right:10px;
 	font-family:'Helvetica Neue',Helvetica,sans-serif;
-	font-size:18px;
+	font-size:15px;
 }
 .menu-item a {
   text-decoration: none;
@@ -173,9 +173,9 @@ img {
 	margin:35px 0;
 }
 /* Comment Styles */
-#comments h1,h2,h3,h4,h5 {
+#comments h1, h2, h3, h4, h5 {
 	font-family: sans-serif;
-	font-size: 28px;
+	font-size: 18px;
 }
 
 .commentlist {
@@ -236,7 +236,7 @@ img {
 }
 #respond h3 {
 	font-family:'Merriweather',Times, Georgia, serif;
-	font-size:28px;
+	font-size:18px;
 	font-weight:700;
 }
 #commentform {
@@ -263,6 +263,8 @@ img {
 	line-height: 1.5;
 }
 #submit {
+	display:block;
+	margin:0 auto;
 	font-size: 24px;
   border: 1px solid #d0d0d0;
   background-color: #fff;
@@ -285,6 +287,7 @@ img {
 	margin:0 auto;
 	padding:15px 0;
 	position:relative;
+	text-align: center;
 }
 #footer#connect {
 	position:absolute;
@@ -301,4 +304,22 @@ img {
 	font-family:'Source Sans Pro',Helvetica,Arial,sans-serif;
 	font-size:18px;
 	margin-left:25px
+}
+
+@media (max-width:415px) {
+	body {
+		padding:0 0.5em;
+	}
+	#wrapper {
+		width:100%;
+	}
+	.post-title h1 {
+		font-size:22px;
+	}
+	.post-title p {
+		font-size: 18px;
+	}
+	.the-post-content, .commentlist {
+		font-size: 15px;
+	}
 }
