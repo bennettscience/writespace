@@ -63,7 +63,7 @@
             <p>posted in: <?php the_category( ' ' ); ?></p>
             <p>tagged: <?php the_tags( ' ' ); ?></p>
             <div class="meta-img">
-              <a onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;" href="http://twitter.com/share?text=<?php the_title(); ?>&url=<?php the_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" /></a>
+              <a onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;" href="http://twitter.com/share?text=<?php the_title(''); ?>+via+@bennettscience&url=<?php the_permalink(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" /></a>
             </div>
           </div><!--/post-metadata-->
 
@@ -83,7 +83,7 @@
           <?php if(have_posts()) : ?>
             <?php while( have_posts()) : the_post(); ?>
             <div class="the-post">
-              <div class="the-page-thumbnail">
+              <div class="the-post-thumbnail-home">
                 <?php if(has_post_thumbnail() ) {
                   the_post_thumbnail();
                 } ?>
