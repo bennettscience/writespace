@@ -1,4 +1,4 @@
 writespace theme for WordPress
 ===
 
-This is a super-lightweight theme designed for writers. Built with readability and beautiful imagery in mind.
+Hacking away at a WordPress theme. Not regularly updated. Mostly functional.
